@@ -11,9 +11,16 @@ addButton.addEventListener("click", () => {
     const UL = createElementFunction("ul");
     UL.classList.add("task");
 
+    const taskContentDiv = createElementFunction("div");
+
+    const inputCheckbox = createElementFunction("input");
+    inputCheckbox.type = "checkbox";
+    taskContentDiv.append(inputCheckbox);
+
     const labelText = createElementFunction("label");
     labelText.innerText = inputText.value;
-    UL.append(labelText);
+    taskContentDiv.append(labelText);
+    UL.append(taskContentDiv)
 
     const deleteButton = createElementFunction("button");
     deleteButton.innerText = "delete";
