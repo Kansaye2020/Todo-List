@@ -6,7 +6,12 @@ function createElementFunction(tagName) {
     return document.createElement(tagName);
 };
 
-addButton.addEventListener("click", () => {
+addButton.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    if(inputText.value === '') {
+        return;
+    }
 
     const UL = createElementFunction("ul");
     UL.classList.add("task");

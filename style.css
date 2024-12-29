@@ -24,3 +24,11 @@ h2 {
     justify-content: space-between;
     width: 100%;
 }
+
+.addButton {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #b5b5b5;
+    border: 1px rgb(96, 34, 34) solid;
+    border-radius: 5px;
+}
