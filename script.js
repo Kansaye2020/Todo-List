@@ -35,6 +35,6 @@ addButton.addEventListener("click", (event) => {
     inputText.value = '';
 
     deleteButton.addEventListener('click', () => {
-        UL.remove();
+        taskContainer.remove(UL);
     });
 });
